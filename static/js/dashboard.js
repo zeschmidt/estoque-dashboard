@@ -16,7 +16,7 @@ fetch('/api/estoque')
       card.className = `card ${abaixoDoLimite ? 'negativo' : 'positivo'}`;
 
       card.innerHTML = `
-        <h4>📦 ${produto.nome}</h4>
+        <h4>${produto.nome}</h4>
         <p class="saldo">Saldo: ${produto.saldo} ${abaixoDoLimite ? '❗' : '✅'}</p>
         <p>Limite mínimo: ${limite}</p>
       `;
